@@ -18,6 +18,7 @@ export function ConfirmPasswordField({ register, errors, getValues, id = 'confir
       <Input
         id={id}
         type="password"
+        placeholder='Confirm your password'
         {...register('confirmPassword', {
           required: 'Please confirm your password',
           validate: (value) =>

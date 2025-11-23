@@ -16,7 +16,7 @@ export function EmailField({ register, errors, id = 'email' }: EmailFieldProps) 
       <Input
         id={id}
         type="email"
-        placeholder="m@example.com"
+        placeholder="your.email@example.com"
         {...register('email', {
           required: 'Email is required',
           pattern: {

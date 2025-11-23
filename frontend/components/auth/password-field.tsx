@@ -55,6 +55,7 @@ export function PasswordField({
       <Input
         id={id}
         type="password"
+        placeholder='Enter your password'
         {...register('password', {
           ...validation,
           onChange: onPasswordChange
