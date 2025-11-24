@@ -9,6 +9,7 @@ import {
   EmailField,
   PasswordField,
   FormFooter,
+  passwordValidation
 } from '@/components/auth';
 
 type LoginFormData = {
@@ -63,7 +64,8 @@ export default function LoginPage() {
           <PasswordField
             register={register}
             errors={errors}
-            validation={{ required: 'Password is required' }}
+            showTooltip
+            validation={passwordValidation}
           />
         </div>
 
